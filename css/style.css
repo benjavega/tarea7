@@ -1,0 +1,263 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    min-height: 100vh;
+}
+
+header,
+section,
+main,
+nav,
+footer,
+article,
+figure,
+hgroup {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    transition: .4s all ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    align-self: flex-end;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    color: #000000;
+}
+
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 100%;
+}
+
+.img-responsive {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+/* HEADER */
+
+.header-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+
+/* MENU  */
+
+.main-menu {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logotipo {
+    width: 126px;
+}
+
+.menu-link-desktop,
+.menu-link-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-link-mobile {
+    display: none;
+}
+
+.links-menu {
+    padding: 0 1rem;
+    line-height: 70px;
+    height: 70px;
+    display: block;
+    color: #000000;
+    transition: .4s all ease-in-out;
+}
+
+.links-menu:hover:not(.cta-btn) {
+    box-shadow: 0 -5px 0 0 #FDB933 inset;
+}
+
+.cta-btn {
+    font-weight: 600;
+    background-color: #FDB933;
+    line-height: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 #e0e0e0;
+    transition: .4s all ease-in-out;
+}
+
+.cta-btn:hover {
+    transform: scale(.95);
+}
+
+.btns {
+    background-color: #FDB933;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    font-weight: 400;
+    border-radius: 10px;
+    border-color: #FDB933;
+    box-shadow: 0 5px 5px 0 #c3c3c3;
+    transition: .4s all ease-in-out;
+}
+
+/* HERO */
+
+.video-hero {
+    width: 100%;
+    
+}
+
+/* PROPUESTA */
+.section-page {
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.section-prop {
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.prop-title {
+    font-size: 24px;
+    text-align: left;
+    
+}
+.prop-description {
+    font-size: 14px;
+    text-align: left;
+}
+
+.image-prop {
+    width: 251px;
+    height: 191px;
+    padding: 10px;
+    border-radius: 15px
+
+}
+
+.title-section {
+    font-size: 24px;
+    margin-bottom: 3rem;
+}
+
+/* Contacto */
+.form-landing-page {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.input-field {
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+}
+
+input,
+select,
+textarea {
+    font-size: 14px;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    
+    box-sizing: content-box;
+    overflow: visible;
+    color: #9c9c9c;
+    padding: 0 1rem;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: .4s all;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 20px 40px -20px rgba(78, 114, 223, 0.5);
+    border: 1px solid #474747;
+    color: #000000;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #000000;
+    padding: 2rem 1rem;
+}
+.footer .copy{
+    font-size: 12px;
+    width: 100%;
+
+}
